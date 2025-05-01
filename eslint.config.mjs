@@ -1,6 +1,6 @@
 import css from '@eslint/css';
 import { defineConfig } from 'eslint/config';
-import prettier from 'eslint-plugin-prettier'; // Явно импортируем плагин
+import prettier from 'eslint-plugin-prettier';
 
 export default defineConfig([
   { ignores: ['**/*.js', '**/*.cjs', '**/*.mjs'] },
