@@ -52,6 +52,54 @@ ol {
   background-color: #d9d9d9;
 }
 
+/* shared classes */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.button {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: rgba(84, 80, 80, 1);
+  text-decoration: none;
+}
+
 .page {
   justify-content: center;
   align-items: center;
